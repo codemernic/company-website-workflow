@@ -130,27 +130,48 @@ body {
 
 /* About Page */
 
-.about-section {
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 40px;
-  background-color: #f4f4f4;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+/* About Page */
 
-.about-section h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #333;
+.about-section {
+  max-width: 1000px;
+  margin: 70px auto;
+  padding: 50px;
+  background: linear-gradient(to right, #f8f9fa, #e9f3ff);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
+.about-section h1 {
+  font-size: 48px;
+  color: #222;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.about-section h1::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background-color: #0077ff;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 10px;
+}
+
 .about-section p {
-  font-size: 18px;
-  line-height: 1.8;
-  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.9;
   color: #555;
+  margin-bottom: 25px;
+  padding: 0 20px;
+}
+
+/* Optional hover effect */
+
+.about-section:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
 }
 
 /* Service Page */
